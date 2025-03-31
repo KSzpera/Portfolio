@@ -2,6 +2,7 @@ nav ul {
     list-style-type: none;
     display: flex;
     gap: 15px;
+<<<<<<< HEAD
 }
 /* Tu namieszałam */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -120,3 +121,17 @@ color: #17c0eb
   .container .box{
     width: 100%;
   }
+=======
+    padding-inline-end: 15px;
+    padding-inline-start: 15px;
+}
+
+nav ul li {
+    border:1px solid black;
+    padding: 10px 15px;
+}
+
+.switch {
+    margin-left: auto;
+}
+>>>>>>> 28c09fe484f8241b55ff36b54478631aca66aae1
