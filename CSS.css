@@ -9,7 +9,7 @@ nav ul li:last-of-type {
 }
 
 body {
-	transition: background-color 0.5s;
+      	transition: background-color 0.5s;
 	background-color: white;
 }
 
@@ -45,10 +45,17 @@ body {
 	transition: 0.5s;
 	background-color: white;
 	color: black;
-	margin-left: 24px;
+	margin-left: 20px;
 	content: '★';
 }
 
+/* Contact Us */
+
+
+/* General */
+section {
+  margin:5%;
+}
 
 /* Tu namieszałam */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
