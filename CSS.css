@@ -1,6 +1,4 @@
 /* Design tokens */
-
-/* Design tokens */
 :root {
   /* Kolory */
   --color-bg: #fdfaf6;
@@ -23,14 +21,13 @@
   --font-family: system-ui, sans-serif;
 }
 
-/*Navigation */
+/* Navigation */
 
 nav {
   background-color: var(--color-bg);
   padding: 1rem 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
-
 
 nav ul {
     list-style-type: none;
