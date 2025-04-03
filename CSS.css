@@ -86,7 +86,7 @@ form {
   max-width: 500px;
   background-color:#fff;
   border-radius: 5px;
-  border: 2px solid #8e44ad;
+  border: 2px solid var(--color-primary);
   padding: 20px 30px;
 }
 
@@ -97,10 +97,10 @@ label {
 }
 
 input[type="submit" i], input[type="reset" i]{
-  background: #8e44ad;
+  background: var(--color-primary);
   padding: 5px 10px;
   outline: none;
-  border: 2px solid #8e44ad;
+  border: 2px solid var(--color-primary);
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
@@ -108,9 +108,13 @@ input[type="submit" i], input[type="reset" i]{
   transition: all 0.3s linear;
 }
 
+input[type="submit" i]:hover, input[type="reset" i]:hover {
+  background-color: var(--color-button-hover);
+}
+
 input {
   margin: 5px 0px;
-  border: 2px solid #8e44ad;
+  border: 2px solid var(--color-primary);
   border-radius: 5px;
   padding: 5px 10px;
   border-radius: 5px;
@@ -121,9 +125,10 @@ input[type="text"], input[type="tel"], input[type="email"] {
 }
 
 textarea {
+  padding: 10px;
   margin:5px 0px;
   width:100%;
-  border: 2px solid #8e44ad;
+  border: 2px solid var(--color-primary);
   border-radius: 5px;
   min-height: 150px;
 }
