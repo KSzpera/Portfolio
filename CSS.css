@@ -3,6 +3,53 @@ nav ul {
     display: flex;
     gap: 15px;
 }
+
+nav ul li:last-of-type {
+  margin-lefT:auto;
+}
+
+body {
+	transition: background-color 0.5s;
+	background-color: white;
+}
+
+/* Switch button */
+.switch {
+	width: 50px;
+	border: 1px solid black;
+	border-radius: 20px;
+	padding-left: 2px;
+	padding-bottom: 2px;
+}
+
+.dark-mode {
+	transition: background-color 0.5s;
+	background-color: black;
+	color: white;
+}
+
+.dark-mode .switch {
+	border: 1px solid white;
+}
+
+.switch:before {
+	transition: 0.5s;
+	background-color: black;
+	padding: 1px 5px;
+	border-radius: 30px;
+	color: white;
+	content: '☀︎';
+}
+
+.dark-mode .switch:before {
+	transition: 0.5s;
+	background-color: white;
+	color: black;
+	margin-left: 24px;
+	content: '★';
+}
+
+
 /* Tu namieszałam */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
@@ -15,11 +62,7 @@ nav ul {
   background: #8e44ad;
   color: #fff;
 }
-html,body{
-  display: grid;
-  height: 100%;
-  place-items: center;
-}
+
 .container{
   max-width: 1100px;
   display: flex;
@@ -120,15 +163,4 @@ color: #17c0eb
   .container .box{
     width: 100%;
   }
-    padding-inline-end: 15px;
-    padding-inline-start: 15px;
-}
-
-nav ul li {
-    border:1px solid black;
-    padding: 10px 15px;
-}
-
-.switch {
-    margin-left: auto;
 }
