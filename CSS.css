@@ -50,7 +50,52 @@ body {
 }
 
 /* Contact Us */
+form {
+  text-align: center;
+  max-width: 500px;
+  background-color:#fff;
+  border-radius: 5px;
+  border: 2px solid #8e44ad;
+  padding: 20px 30px;
+}
 
+label {
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+}
+
+input[type="submit" i], input[type="reset" i]{
+  background: #8e44ad;
+  padding: 5px 10px;
+  outline: none;
+  border: 2px solid #8e44ad;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+  transition: all 0.3s linear;
+}
+
+input {
+  margin: 5px 0px;
+  border: 2px solid #8e44ad;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"] {
+  width: 100%;
+}
+
+textarea {
+  margin:5px 0px;
+  width:100%;
+  border: 2px solid #8e44ad;
+  border-radius: 5px;
+  min-height: 150px;
+}
 
 /* General */
 section {
