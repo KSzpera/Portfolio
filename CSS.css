@@ -1,3 +1,34 @@
+/* Design tokens */
+:root {
+  /* Kolory */
+  --color-bg: #fdfaf6;
+  --color-text: #333;
+  --color-card: white;
+  --color-button: #8e44ad;
+  --color-button-hover: #53186d;
+  --color-button-text: white;
+  --color-primary: #8e44ad;
+  --color-primary-hover: #53186d;
+  --color-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+
+  /* Promienie */
+  --radius: 0.5rem;
+
+  /* Przestrzeń */
+  --spacing: 2rem;
+
+  /* Fonty */
+  --font-family: system-ui, sans-serif;
+}
+
+/* Navigation */
+
+nav {
+  background-color: var(--color-bg);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -10,13 +41,13 @@ nav ul li:last-of-type {
 
 body {
       	transition: background-color 0.5s;
-	background-color: white;
+	background-color: var(--color-bg);
 }
 
 /* Switch button */
 .switch {
 	width: 50px;
-	border: 1px solid black;
+	border: 1px solid var(--color-text);
 	border-radius: 20px;
 	padding-left: 2px;
 	padding-bottom: 2px;
@@ -24,27 +55,27 @@ body {
 
 .dark-mode {
 	transition: background-color 0.5s;
-	background-color: black;
-	color: white;
+	background-color: var(--color-text);
+	color: var(--color-button-text);
 }
 
 .dark-mode .switch {
-	border: 1px solid white;
+	border: 1px solid var(--color-button-text);
 }
 
 .switch:before {
 	transition: 0.5s;
-	background-color: black;
+	background-color: var(--color-text);
 	padding: 1px 5px;
 	border-radius: 30px;
-	color: white;
+	color: var(--color-button-text);
 	content: '☀︎';
 }
 
 .dark-mode .switch:before {
 	transition: 0.5s;
-	background-color: white;
-	color: black;
+	background-color: var(--color-bg);
+	color: var(--color-text);
 	margin-left: 20px;
 	content: '★';
 }
@@ -66,8 +97,8 @@ section {
   font-family: 'Poppins', sans-serif;
 }
 ::selection{
-  background: #8e44ad;
-  color: #fff;
+  background: var(--color-primary);
+  color: var(--color-button-text);
 }
 
 .container{
@@ -80,14 +111,14 @@ section {
 }
 .container .box{
   width: calc(33% - 10px);
-  background: #fff;
+  background: var(--color-card);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px 30px;
   border-radius: 5px;
-  border: solid #8e44ad;
+  border: solid var(--color-primary);
 }
 .box .quote i{
 margin-top: 10px;
@@ -98,7 +129,7 @@ color: #17c0eb
   margin: 10px 0;
   height: 150px;
   width: 150px;
-  background: #8e44ad;
+  background: var(--color-primary);
   padding: 3px;
   border-radius: 50%;
 }
@@ -107,7 +138,7 @@ color: #17c0eb
   width: 100%;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #fff;
+  border: 2px solid var(--color-card);
 }
 .box p{
   text-align: justify;
@@ -117,7 +148,7 @@ color: #17c0eb
 }
 .box .name{
   margin: 10px 0 3px 0;
-  color: #8e44ad;
+  color: var(--color-primary);
   font-size: 18px;
   font-weight: 600;
 }
@@ -130,22 +161,22 @@ color: #17c0eb
   width: 100%;
 }
 .btns button{
-  background: #8e44ad;
+  background: var(--color-button);
   width: 100%;
   padding: 9px 0px;
   outline: none;
-  border: 2px solid #8e44ad;
+  border: 2px solid var(--color-button);
   border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
   font-weight: 400;
-  color: #fff;
+  color: var(--color-button-text);
   margin-left: 5px;
   transition: all 0.3s linear;
 }
 
 .btns button:hover{
-  background: #53186d;
+  background: var(--color-button-hover);
 }
 
 @media (max-width:1045px){
