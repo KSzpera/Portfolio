@@ -144,7 +144,7 @@ section {
   margin:5%;
 }
 
-/* Tu namieszałam */
+/* Import czcionki */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0px;
@@ -152,10 +152,19 @@ section {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+/* Zaznaczenie */
 ::selection{
   background: var(--color-primary);
   color: var(--color-button-text);
 }
+
+h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Cards */
 
 .container{
   max-width: 1100px;
@@ -179,7 +188,7 @@ section {
 .box .quote i{
 margin-top: 10px;
 font-size: 45px;
-color: #17c0eb
+color: var(--color-primary);
 }
 .container .box .image{
   margin: 10px 0;
@@ -197,7 +206,7 @@ color: #17c0eb
   border: 2px solid var(--color-card);
 }
 .box p{
-  text-align: justify;
+  text-align: left;
   margin-top: 8px;
   font-size: 16px;
   font-weight: 400;
@@ -208,6 +217,8 @@ color: #17c0eb
   font-size: 18px;
   font-weight: 600;
 }
+
+/* Buttons */
 
 .btns{
   margin-top: 20px;
@@ -230,7 +241,6 @@ color: #17c0eb
   margin-left: 5px;
   transition: all 0.3s linear;
 }
-
 .btns button:hover{
   background: var(--color-button-hover);
 }
