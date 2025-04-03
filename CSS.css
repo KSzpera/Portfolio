@@ -87,6 +87,7 @@ section {
   align-items: center;
   padding: 20px 30px;
   border-radius: 5px;
+  border: solid #8e44ad;
 }
 .box .quote i{
 margin-top: 10px;
@@ -114,17 +115,13 @@ color: #17c0eb
   font-size: 16px;
   font-weight: 400;
 }
-.box .name_job{
+.box .name{
   margin: 10px 0 3px 0;
   color: #8e44ad;
   font-size: 18px;
   font-weight: 600;
 }
-.rating i{
-  font-size: 18px;
-  color: #8e44ad;
-  margin-bottom: 5px;
-}
+
 .btns{
   margin-top: 20px;
   margin-bottom: 5px;
@@ -142,24 +139,15 @@ color: #17c0eb
   cursor: pointer;
   font-size: 18px;
   font-weight: 400;
-  color: #8e44ad;
-  transition: all 0.3s linear;
-}
-.btns button:first-child{
-  background: none;
-  margin-right: 5px;
-}
-.btns button:last-child{
   color: #fff;
   margin-left: 5px;
+  transition: all 0.3s linear;
 }
-.btns button:first-child:hover{
-  background: #8e44ad;
-  color: #fff;
-}
+
 .btns button:hover{
-  color: #fff;
+  background: #53186d;
 }
+
 @media (max-width:1045px){
   .container .box{
     width: calc(50% - 10px);
